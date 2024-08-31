@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 30, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: August 31, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,24 +34,24 @@
   
   
 
-  <meta name="author" content="吳健雄" />
+  <meta name="author" content="Alexandra V. Schubert" />
 
   
   
   
     
   
-  <meta name="description" content="The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website." />
+  <meta name="description" content="PhD candidate at the Zurich Graduate School of Economics in Switzerland. Researching health and poverty using behavioral economics tools." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:4321/publication_types/article/" />
+  <link rel="alternate" hreflang="en-us" href="https://lexischubert.github.io/publication_types/article/" />
 
   
   
   
   
     
-    <link rel="stylesheet" href="/css/themes/emerald.min.css" />
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
   
 
   
@@ -130,6 +130,45 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1SL9Q0M2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-TR1SL9Q0M2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
 
 
 
@@ -156,14 +195,14 @@
 
   
   
-    <link rel="alternate" href="/publication_types/article/index.xml" type="application/rss+xml" title="Hugo Academic CV Theme" />
+    <link rel="alternate" href="/publication_types/article/index.xml" type="application/rss+xml" title="Alexandra V. Schubert" />
   
 
   
   <link rel="icon" type="image/png" href="/media/icon_hu3247630877640252165.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4166356570829923896.png" />
 
-  <link rel="canonical" href="http://localhost:4321/publication_types/article/" />
+  <link rel="canonical" href="https://lexischubert.github.io/publication_types/article/" />
 
   
   
@@ -185,14 +224,14 @@
   
   <meta property="twitter:card" content="summary" />
   
-    <meta property="twitter:site" content="@GetResearchDev" />
-    <meta property="twitter:creator" content="@GetResearchDev" />
+    <meta property="twitter:site" content="@SchubertLexi" />
+    <meta property="twitter:creator" content="@SchubertLexi" />
   
-  <meta property="og:site_name" content="Hugo Academic CV Theme" />
-  <meta property="og:url" content="http://localhost:4321/publication_types/article/" />
-  <meta property="og:title" content="Article | Hugo Academic CV Theme" />
-  <meta property="og:description" content="The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website." /><meta property="og:image" content="http://localhost:4321/media/icon_hu7729264130191091259.png" />
-    <meta property="twitter:image" content="http://localhost:4321/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:site_name" content="Alexandra V. Schubert" />
+  <meta property="og:url" content="https://lexischubert.github.io/publication_types/article/" />
+  <meta property="og:title" content="Article | Alexandra V. Schubert" />
+  <meta property="og:description" content="PhD candidate at the Zurich Graduate School of Economics in Switzerland. Researching health and poverty using behavioral economics tools." /><meta property="og:image" content="https://lexischubert.github.io/media/icon_hu7729264130191091259.png" />
+    <meta property="twitter:image" content="https://lexischubert.github.io/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta property="og:updated_time" content="2019-04-07T00:00:00&#43;00:00" />
@@ -204,7 +243,7 @@
 
 
 
-  <title>Article | Hugo Academic CV Theme</title>
+  <title>Article | Alexandra V. Schubert</title>
 
   
   
@@ -373,118 +412,6 @@
     
   
   
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-      
-    
-      
-      
-    
   
   
   
@@ -585,8 +512,8 @@
   
   <script
     defer
-    src="/js/hugo-blox-en.min.js"
-    integrity=""
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
   ></script>
 
   
@@ -617,8 +544,8 @@
   <nav class="navbar px-3 flex justify-left">
     <div class="order-0 h-100">
       
-      <a class="navbar-brand" href="/" title="Hugo Academic CV Theme">
-        Your Name
+      <a class="navbar-brand" href="/" title="Alexandra V. Schubert">
+        Lexi Schubert
       </a>
     </div>
     
@@ -655,8 +582,8 @@
         <a
           class="nav-link "
           
-          href="/"
-        >Bio</a
+          href="/#about"
+        >Home</a
         >
       </li>
       
@@ -669,8 +596,8 @@
         <a
           class="nav-link "
           
-          href="/#papers"
-        >Papers</a
+          href="/#research"
+        >Research</a
         >
       </li>
       
@@ -683,64 +610,22 @@
         <a
           class="nav-link "
           
-          href="/#talks"
-        >Talks</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/#news"
-        >News</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/experience/"
-        >Experience</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/projects/"
-        >Projects</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/teaching/"
+          href="/#teaching"
         >Teaching</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/#contact"
+        >Contact</a
         >
       </li>
       
@@ -914,7 +799,7 @@
 
   
   <p class="powered-by text-center">
-    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2024 Alexandra V. Schubert.
   </p>
   
 
