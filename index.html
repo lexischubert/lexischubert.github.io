@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 31, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 4, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,7 +44,7 @@
   <meta name="description" content="PhD candidate at the Zurich Graduate School of Economics in Switzerland. Researching health and poverty using behavioral economics tools." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://lexischubert.github.io/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:4321/" />
 
   
   
@@ -130,45 +130,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1SL9Q0M2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'G-TR1SL9Q0M2', {});
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-
 
 
 
@@ -202,7 +163,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu3247630877640252165.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4166356570829923896.png" />
 
-  <link rel="canonical" href="https://lexischubert.github.io/" />
+  <link rel="canonical" href="http://localhost:4321/" />
 
   
   
@@ -228,10 +189,10 @@
     <meta property="twitter:creator" content="@SchubertLexi" />
   
   <meta property="og:site_name" content="Alexandra V. Schubert" />
-  <meta property="og:url" content="https://lexischubert.github.io/" />
+  <meta property="og:url" content="http://localhost:4321/" />
   <meta property="og:title" content="Alexandra V. Schubert" />
-  <meta property="og:description" content="PhD candidate at the Zurich Graduate School of Economics in Switzerland. Researching health and poverty using behavioral economics tools." /><meta property="og:image" content="https://lexischubert.github.io/media/icon_hu7729264130191091259.png" />
-    <meta property="twitter:image" content="https://lexischubert.github.io/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="PhD candidate at the Zurich Graduate School of Economics in Switzerland. Researching health and poverty using behavioral economics tools." /><meta property="og:image" content="http://localhost:4321/media/icon_hu7729264130191091259.png" />
+    <meta property="twitter:image" content="http://localhost:4321/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta property="og:updated_time" content="2024-08-31T00:00:00&#43;00:00" />
@@ -243,7 +204,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite","url": "https://lexischubert.github.io/"
+  "@type": "WebSite","url": "http://localhost:4321/"
 }
 </script>
 
@@ -520,8 +481,8 @@
   
   <script
     defer
-    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
-    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
   ></script>
 
   
@@ -816,7 +777,7 @@
 
 
 <section id="section-resume-biography-3" class="relative hbb-section blox-resume-biography-3  dark" style="padding: 6rem 0 6rem 0;" >
- <div class="home-section-bg  bg-image" style="background-color: black;background-image: url(&#39;https://lexischubert.github.io/media/stacked-peaks.svg&#39;);background-size: cover;background-position: center;filter: brightness(1);">
+ <div class="home-section-bg  bg-image" style="background-color: white;background-image: url(&#39;http://localhost:4321/media/stacked-peaks.svg&#39;);background-size: cover;background-position: center;filter: brightness(1);">
    
  </div>
   
@@ -973,20 +934,15 @@
       <div class="bio-text" >
         <h2 id="heading"></h2>
 <p>I am a PhD candidate at the <a href="https://www.econ.uzh.ch/en.html" target="_blank" rel="noopener">Zurich Graduate School of Economics</a> (University of Zurich, Switzerland) and a doctoral scholarship holder at the <a href="https://www.ubscenter.uzh.ch" target="_blank" rel="noopener">UBS Center for Economics in Society</a>.</p>
-<p>My research revolves around health and poverty and uses tools from behavioral and experimental economics to study causes and implication of financial and mental well-being.</p>
-<p>I received my undergraduate degree from the University of Virginia (Economics, Cognitive Science). Before starting graduate school, I was an assistant teacher at a school in Colorado.
-I also enjoy trail running, cycling, rowing, skiing, and the occasional triathlon.</p>
+<p>My research revolves around health and poverty and uses tools from behavioral and experimental economics to study the relationship between of financial and mental well-being.</p>
+<p>I received my undergraduate degree from the University of Virginia (double major in Economics and Cognitive Science with a minor in Math). Before starting graduate school, I was an assistant teacher at a secondary school in Colorado and interned at the Virginia Retirement System and the Bavarian Institute for Research in Higher Education.
+In my free time, I enjoy exploring the outdoors, be it trail running, cycling, rowing, skiing, or an occasional sprint triathlon.</p>
 <p>I will be on the Academic Job Market in 2024/2025.</p>
 
       </div>
     </div>
     
 
-    
-    <a href="uploads/schubert_cv.pdf" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-      <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-    </svg> Download CV</a>
     
 
 
@@ -1176,8 +1132,7 @@ I also enjoy trail running, cycling, rowing, skiing, and the occasional triathlo
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><p><strong>Refereed Publications</strong></p>
 <ul>
-<li>Bohr, Clement E., Charles A. Holt, and Alexandra V. Schubert. “[Assisted savings for retirement: An experimental analysis].(
-)” European Economic Review 119 (2019): 42-54.</li>
+<li>Bohr, Clement E., Charles A. Holt, and Alexandra V. Schubert. “[Assisted savings for retirement: An experimental analysis].(<a href="https://doi.org/10.1016/j.euroecorev.2019.05.020" target="_blank" rel="noopener">https://doi.org/10.1016/j.euroecorev.2019.05.020</a>)” European Economic Review 119 (2019): 42-54.</li>
 </ul>
 <p><strong>Work in Progress</strong></p>
 <ul>
