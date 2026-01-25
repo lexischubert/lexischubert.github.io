@@ -9,55 +9,94 @@
     <!-- Optional: Google Font for academic feel -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #1a1a1a;
-            font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-            display: flex;
-            justify-content: center;
+    <meta name="description" content="Postdoc at UC Berkeley. Behavioral & Development Economist researching">
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* New outer layout */
+    .layout {
+        display: flex;
+        gap: 3rem;
+        align-items: flex-start;
+        max-width: 900px;
+        padding: 3rem 2rem;
+    }
+
+    /* Your original container, just without padding */
+    .container {
+        max-width: 640px;
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+        margin-bottom: 1.4rem;
+    }
+
+    a {
+        color: #1a1a1a;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    a:hover {
+        opacity: 0.75;
+    }
+
+    /* Image */
+    .portrait {
+        width: 180px;
+        height: auto;
+        border-radius: 2px;
+    }
+
+    /* Mobile: stack image above text */
+    @media (max-width: 768px) {
+        .layout {
+            flex-direction: column;
             align-items: center;
-            min-height: 100vh;
+            text-align: center;
         }
 
-        .container {
-            max-width: 640px;
-            padding: 3rem 2rem;
-            line-height: 1.7;
+        .portrait {
+            width: 160px;
+            margin-bottom: 1.5rem;
         }
+    }
+</style>
 
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-        }
-
-        p {
-            font-size: 1.05rem;
-            margin-bottom: 1.4rem;
-        }
-
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        a:hover {
-            opacity: 0.75;
-        }
-    </style>
 </head>
 <body>
-    <main class="container">
+    <main class="layout">
+    <img src="photo2025.jpg" alt="AVS portrait" class="portrait">
+    <div class="container">
+
         <h1>Alexandra V. (Lexi) Schubert</h1>
-        <h2>This website is currently under construction.</h2>
+ 
+        <p>
+            <b>This website is currently under construction.</b>
+        </p>
 
         <p>
-            I am Postdoctoral Scholar at the Center for Effective Action (CEGA) at the University of California Berkeley, and I will join Wesleyan University as Assistant Professor of Economics in the Fall of 2026.
-
+            I am <b>Postdoctoral Scholar</b> at the Center for Effective Action (CEGA) at the <b>University of California Berkeley</b>, and I will join Wesleyan University as Assistant Professor of Economics in the Fall of 2026.
             While this page is under construction, you can find more information on my
             <a href="https://cega.berkeley.edu/person/alexandra-schubert/">CEGA profile</a>.
         </p>
@@ -71,6 +110,7 @@
             My working paper on <em>Self-Detrimental Avoidance of Rest</em> (awarded the best pre-tenure paper prize at the AFE 2025 at UChicago) can be found
             <a href="https://doi.org/10.26085/C3J59C">here</a>.
         </p>
-    </main>
+        </div>
+      </main>
 </body>
 </html>
