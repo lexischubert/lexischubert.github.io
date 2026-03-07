@@ -1,32 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Primary metadata -->
     <meta charset="UTF-8">
-    <title>Under Construction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Optional: Google Font for academic feel -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <title>Alexandra V. (Lexi) Schubert — Behavioral and Development Economist</title>
 
-    <meta name="description" content="Postdoc at UC Berkeley. Behavioral & Development Economist researching">
+    <meta name="description" content="Alexandra V. (Lexi) Schubert — Behavioral and Development Economist. Postdoctoral Scholar at UC Berkeley CEGA. Research on development and behavioral economics.">
 
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://lexischubert.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alexandra V. (Lexi) Schubert — Behavioral and Development Economist">
+    <meta property="og:description" content="Postdoctoral Scholar at UC Berkeley CEGA. Behavioral and Development Economics.">
+    <meta property="og:url" content="https://lexischubert.github.io/">
+    <meta property="og:image" content="https://lexischubert.github.io/uploads/photo2025.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexandra V. (Lexi) Schubert — Behavioral and Development Economist">
+    <meta name="twitter:description" content="Postdoctoral Scholar at UC Berkeley CEGA. Behavioral and Development Economics.">
+    <meta name="twitter:image" content="https://lexischubert.github.io/uploads/photo2025.jpg">
 
 <style>
+    /* --- YOUR ORIGINAL STYLES START HERE --- */
     body {
         margin: 0;
         padding: 0;
         background-color: #ffffff;
         color: #1a1a1a;
         font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+        /* Changes from your original code to fix the footer: */
         display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center;    /* Centers everything horizontally */
+        min-height: 100vh;      /* Ensures the page is at least full height */
     }
 
-    /* New outer layout */
+    /* Ensure the main content expands to push the footer down */
     .layout {
+        flex: 1;                /* This "eats" available space, pushing footer to bottom */
         display: flex;
         gap: 3rem;
         align-items: flex-start;
@@ -34,7 +51,21 @@
         padding: 3rem 2rem;
     }
 
-    /* Your original container, just without padding */
+    .site-footer {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+        color: #b2b2b2;
+        font-size: 0.6rem;
+        border-top: 0px solid #eee; /* Optional: adds a nice separation line */
+    }
+
+    .footer-links a {
+        color: #888;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
     .container {
         max-width: 640px;
         line-height: 1.7;
@@ -61,56 +92,161 @@
         opacity: 0.75;
     }
 
-    /* Image */
     .portrait {
         width: 180px;
         height: auto;
         border-radius: 2px;
     }
 
-    /* Mobile: stack image above text */
     @media (max-width: 768px) {
         .layout {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-
         .portrait {
             width: 160px;
             margin-bottom: 1.5rem;
         }
     }
+    /* --- YOUR ORIGINAL STYLES END HERE --- */
+
+    /* --- NEW MINIMALIST MENU STYLES --- */
+    .nav-menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        margin-top: 2.5rem; /* Space after the AFE sentence */
+    }
+
+    .nav-box {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff !important; /* Ensure font is white */
+        text-decoration: none !important;
+        padding: 5px 24px;
+        font-family: "Source Serif 4", serif;
+        font-weight: 400;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-box:hover {
+        background-color: #333333;
+        opacity: 1 !important;
+    }
+
+    /* Dropdown Logic */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 200px;
+        border: 1px solid #000000;
+        z-index: 10;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        left: 0;
+    }
+
+    .dropdown-content li a {
+        color: #1a1a1a !important;
+        padding: 10px 15px;
+        text-decoration: none !important;
+        display: block;
+        font-size: 0.9rem;
+        text-transform: none; /* Keeps dropdown text natural */
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #f5f5f5;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-line {
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 0;
+    }
 </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alexandra V. Schubert",
+    "jobTitle": "Economist",
+    "affiliation": "University of California Berkeley",
+    "url": "https://lexischubert.github.io"
+  }
+  </script>
 
 </head>
 <body>
     <main class="layout">
-    <img src="uploads/photo2025.jpg" alt="AVS portrait" class="portrait">
-    <div class="container">
+        <img src="uploads/photo2025.jpg" alt="AVS portrait" class="portrait">
+        
+        <div class="container">
+            <h1>Alexandra V. (Lexi) Schubert</h1>
+    
+            <p>
+                I am a <b>Postdoctoral Scholar</b> at the Center for Effective Action (CEGA) at the <b>University of California Berkeley</b>, and I will join Wesleyan University as Assistant Professor of Economics in the Fall of 2026.
+                
+                <!-- While this page is under construction, you can find more information on my
+                <a href="https://cega.berkeley.edu/person/alexandra-schubert/">CEGA profile</a>. -->
+            </p>
 
-        <h1>Alexandra V. (Lexi) Schubert</h1>
- 
-        <p>
-            <b>This website is currently under construction.</b>
-        </p>
+            <p>
+                My CV is available
+                <a href="uploads/Schubert_CV_website.pdf">here</a>.
+            </p>
 
-        <p>
-            I am <b>Postdoctoral Scholar</b> at the Center for Effective Action (CEGA) at the <b>University of California Berkeley</b>, and I will join Wesleyan University as Assistant Professor of Economics in the Fall of 2026.
-            While this page is under construction, you can find more information on my
-            <a href="https://cega.berkeley.edu/person/alexandra-schubert/">CEGA profile</a>.
-        </p>
+         
+            <!-- <p>
+                My working paper on <em>Self-Detrimental Avoidance of Rest</em> (awarded the best pre-tenure paper prize at the AFE 2025 at UChicago) can be found
+                <a href="https://doi.org/10.26085/C3J59C">here</a>.
+            </p> -->
+      
 
-        <p>
-            My CV is available
-            <a href="uploads/Schubert_CV_website.pdf">here</a>.
-        </p>
-
-        <p>
-            My working paper on <em>Self-Detrimental Avoidance of Rest</em> (awarded the best pre-tenure paper prize at the AFE 2025 at UChicago) can be found
-            <a href="https://doi.org/10.26085/C3J59C">here</a>.
-        </p>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="https://cega.berkeley.edu/person/alexandra-schubert/" class="nav-box">CEGA Website</a></li>
+                    <li><a href="research.html" class="nav-box">Research</a></li>
+                    <li><a href="teaching.html" class="nav-box">Teaching</a></li>
+                    <li class="dropdown">
+                        <span class="nav-box">Resources</span>
+                        <ul class="dropdown-content">
+                            <li><a href="conferences.html">Conferences</a></li>
+                            <hr class="dropdown-line">
+                            <li><a href="fieldwork.html">Field Work Guide</a></li>
+                            <hr class="dropdown-line">
+                            <li><a href="klps.html">KLPS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </main>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <span>&copy; 2026 Alexandra V. Schubert. All rights reserved. Content may not be used for AI training or machine learning purposes.</span>
+            <!-- <nav class="footer-links">
+                <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Data Protection</a>
+            </nav> -->
+        </div>
+    </footer>
+
 </body>
 </html>
