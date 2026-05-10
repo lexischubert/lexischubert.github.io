@@ -120,51 +120,96 @@
             margin-bottom: 1.5rem;
         }
     }
+
+    @media (max-width: 580px) {
+    .nav-menu {
+        flex-direction: column; /* Clean stacked alignment on tiny viewports */
+        gap: 6px;
+    }
+    
+    .nav-menu > li {
+        width: 100%;
+    }
+    
+    .nav-box {
+        height: 40px;         /* Uniform slim height for mobile cells */
+        font-size: 14px;      /* Drops fluid scaling when safely stacked */
+        border-radius: 0;     /* Keeps sharp corners on mobile */
+    }
+    }
     /* --- YOUR ORIGINAL STYLES END HERE --- */
 
     /* --- NEW MINIMALIST MENU STYLES --- */
+
     .nav-menu {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 10px;
-        margin-top: 2.5rem; /* Space after the AFE sentence */
-    }
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;            /* Tight, elegant spacing */
+  width: 100%;
+}
 
-    .nav-box {
-        display: inline-block;
-        background-color: #000000;
-        color: #ffffff !important; /* Ensure font is white */
-        text-decoration: none !important;
-        padding: 5px 24px;
-        font-family: "Source Serif 4", serif;
-        font-weight: 400;
-        font-size: 0.95rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
+.nav-menu > li {
+  flex: 1;              /* Keeps all columns exactly uniform in width */
+  min-width: 0;         /* Crucial: lets flexbox shrink items gracefully */
+  position: relative;
+}
 
-    .nav-box:hover {
-        background-color: #333333;
-        opacity: 1 !important;
-    }
 
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* Sizing Constraints */
+  height: 38px;           /* Elegant, slim height profile */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 4px;
+  
+  /* Absolute Sharp Edges */
+  border-radius: 0;       /* NO rounded corners */
+  
+  /* Solid Black Color Theme */
+  background-color: #000000; /* Pure Black */
+  color: #ffffff;            /* White text */
+  text-decoration: none;
+  
+  /* Fluid Text Size to Prevent Wrapping */
+  font-size: clamp(11px, 1.2vw, 14px); 
+  letter-spacing: 0.3px;
+  
+  /* Hover Interaction */
+  transition: background-color 0.1s ease;
+}
+
+.nav-box:hover {
+  background-color: #333333; /* Dark gray hover state */
+}
+
+    /* Dropdown Logic */
     /* Dropdown Logic */
     .dropdown {
         position: relative;
+        display: flex; /* Ensures parent element matches layout grid height */
     }
 
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #ffffff;
-        min-width: 200px;
+        width: 100%;             /* Forces dropdown to match button width exactly */
+        box-sizing: border-box;  /* Includes the border inside the 100% width */
         border: 1px solid #000000;
         z-index: 10;
         padding: 0;
         margin: 0;
         list-style: none;
         left: 0;
+        top: 100%;               /* Positions dropdown cleanly right below the button */
     }
 
     .dropdown-content li a {
@@ -189,6 +234,25 @@
         border-top: 1px solid #000000;
         margin: 0;
     }
+
+    /* Adaptive Mobile View (Triggered below 580px) */
+    /* Main Menu Adaptive Mobile View Stack */
+    @media (max-width: 580px) {
+        .nav-menu {
+            flex-direction: column; /* Switches from row layout to vertical stack */
+            gap: 6px;               /* Adds a clean gap between stacked rows */
+        }
+
+        .nav-menu > li {
+            width: 100%;            /* Forces every main list item to occupy full width */
+        }
+
+        .nav-box {
+            height: 40px;           /* Gives a slightly larger touch target for mobile fingers */
+            font-size: 14px;        /* Fixes text sizing to normal on mobile screens */
+        }
+    }
+
 </style>
 
   <script type="application/ld+json">
@@ -238,11 +302,11 @@
 
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="https://cega.berkeley.edu/person/alexandra-schubert/" class="nav-box">CEGA Website</a></li>
-                    <li><a href="research.html" class="nav-box">Research</a></li>
-                    <li><a href="teaching.html" class="nav-box">Teaching</a></li>
+                    <li><a href="https://cega.berkeley.edu/person/alexandra-schubert/" class="nav-box">CEGA WEBSITE</a></li>
+                    <li><a href="research.html" class="nav-box">RESEARCH</a></li>
+                    <li><a href="teaching.html" class="nav-box">TEACHING</a></li>
                     <li class="dropdown">
-                        <span class="nav-box">Resources</span>
+                        <span class="nav-box">RESOURCES</span>
                         <ul class="dropdown-content">
                             <li><a href="conferences.html">Conferences</a></li>
                             <hr class="dropdown-line">
